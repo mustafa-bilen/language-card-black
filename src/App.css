@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color1: #0099ff;
+  --color2: #fff;
+  --color3: #202020;
+  --color4: #d93e30;
+  --color5: #8c1414;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background-color: var(--color3);
 }
 
-.App-link {
-  color: #61dafb;
+.reactlogo {
+  width: 300px;
+  text-align: center;
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.down-container {
+  background-color: var(--color1);
+  width: 350px;
+  border-radius: 20px;
+}
+
+.main-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-columns: 150px 150px;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.container {
+  background-color: var(--color2);
+  border-radius: 15px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  max-width: auto;
+  max-height: 75px;
+}
+
+.container p {
+  font-size: small;
+  text-align: left;
+  list-style-position: inside;
+  width: 85px;
+  height: 100px;
+}
+
+.container:hover {
+  box-shadow: 0 0 8px var(--color5);
+}
+
+.container:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
